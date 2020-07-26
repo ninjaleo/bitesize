@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: frontend
+  name: replicapod
   labels:
     app: mypod
     tier: frontend
@@ -18,4 +18,4 @@ spec:
           image: nginx
   selector:
     matchLabels:
-      app: myapp
+      app: mypod
